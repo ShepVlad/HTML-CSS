@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
+    
+</head>
+<body>
+  
+   <div class="container">
+    <form id="forma" action="#" method="post">
+    <p><i>Пожалуйста заполните форму</i></p>
+    <fieldset>
+         <legend>Contact Details</legend>
+        <label for="name">Name <em>*</em></label>
+        <input id="name" placeholder="Введите имя" pattern="[A-Z]{1}" autofocus required ><br>
+        <label for="telephone">Telephone</label>
+        <input id="telephone" placeholder="(xxx) xxx-xx-xx" pattern="8-[0-9]{3}-[0-9]{3}" required><br>
+        <label for="email">Email <em>*</em></label>
+        <input id="email" type="email" required><br>
+        </fieldset>
+       <fieldset>
+        <legend>Personal Information</legend>
+     
+             <label for="birthDate">Birtn Date <em>*</em></label>
+        <input type="date" required id="bithDate"><br>
+        
+        <label for="age">Age <em>*</em></label>
+        <input type="number" id="age" min="0" max="120" step="0.1" required><br>
+        <label for="gender">Gender</label>
+        <select  id="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+        </select><br>
+        <label for="comments">Расскажите немного о себе. <em>*</em></label>
+        <textarea id="comments" required></textarea>
+        
+        
+   </fieldset>
+       
+       
+         <fieldset>
+         <legend>Выбирите Ваше Животное</legend>
+         <label for="php">
+             <input type="checkbox" id="puher">Пыхер
+         </label><br>
+           <label for="human">
+             <input type="checkbox" id="human">Обычный человек
+         </label><br>
+           <label for="Step">
+             <input type="checkbox" id="step">Шагист
+         </label>
+         </fieldset>
+         
+          <fieldset>
+              <legend>Связаться со мной</legend>
+              <label for="Gave">Согласны отдать хату?<br><input type="radio" name="Yep" value="yes">Да <input type="radio" name="Yep" value="nope">Нет <br>  </label><br>
+            
+             
+              <label for="Enter">Согласен на ваши условия<br> <input type="checkbox" id="ent_q">Да</label>
+              
+          </fieldset>
+          
+          
+          
+         <input type="submit" value="Submit">
+         
+    </form>
+    </div>
+   
+   
+</body>
+</html>
